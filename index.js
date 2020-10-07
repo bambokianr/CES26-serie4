@@ -1,13 +1,9 @@
 
 const express = require('express');
-const path = require('path');
 const multer = require('multer');
-const { createBrotliCompress } = require('zlib');
 
 const app = express();
 app.use(express.static('public'));
-
-
 
 //1) Permite a exibição de arquivos estáticos.
 app.get('/image.jpg', (req, res) => {
